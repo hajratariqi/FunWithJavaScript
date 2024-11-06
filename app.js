@@ -1,5 +1,5 @@
 let isExpend = false
-const expandText = (ele, type) =>{
+const expandText = (ele) =>{
     if(isExpend == false){
      ele.previousSibling.style.display = 'block'
      isExpend = true
