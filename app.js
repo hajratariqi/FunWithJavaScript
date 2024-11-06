@@ -11,3 +11,8 @@ const expandText = (ele) =>{
         ele.innerHTML = 'read less'
     }
 }
+
+const makeInvisible = (image) =>{
+        image.className += ' hidden'; 
+
+} 

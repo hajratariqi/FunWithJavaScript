@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
 .animal-list{
     gap: 10px;
     display: flex;
@@ -34,6 +41,13 @@
     cursor: pointer;
     font-size: 15px;
 }
+.blobfishImage{
+    width: 400px;
+    border-radius: 30px;
+}
+.hidden{
+    display: none;
+}
 </style>
 <body>
     <div class="animal-list">
@@ -42,6 +56,8 @@
         <div>Fish <p class="moreText">A fish is an aquatic, anamniotic, gill-bearing vertebrate animal with swimming fins and a hard skull,</p><span onclick="expandText(this)">read more</span></div>
         <div>Shark<p class="moreText">Sharks are a group of elasmobranch fish characterized by a cartilaginous skeleton, five to seven gill slits on the sides of the head, and pectoral fins that are not fused to the hea</p><span onclick="expandText(this)">read more</span></div>
     </div>
+
+    <img class="blobfishImage" src="https://www.pond-planet.co.uk/blog/wp-content/uploads/2023/12/Untitled-2023-12-21T105509.573.png" alt="Blobfish" onclick="makeInvisible(this)">
 
      <script src="./app.js"></script>
 </body>
