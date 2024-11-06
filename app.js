@@ -16,3 +16,22 @@ const makeInvisible = (image) =>{
         image.className += ' hidden'; 
 
 } 
+let backToBtn = false
+const changeColor = (btn) =>{
+    const allPEle = document.getElementsByTagName('p');
+   
+
+    if(backToBtn == false){
+        for(let i of allPEle){
+        i.style.color = 'red'
+        btn.innerHTML = 'Reset'
+    }
+    backToBtn = true 
+    }else{
+        for(let i of allPEle){
+        i.style.color = 'black'
+        btn.innerHTML = 'Change color'
+        }
+        backToBtn = false
+    }
+} 
