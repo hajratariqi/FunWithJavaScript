@@ -5,7 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+.animal-list{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.animal-list > div{
+    font-size: 20px;
+    max-width: 300px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+    text-align: center;
+
+}.moreText{
+    font-size: 18px;
+    padding: 10px 5px;
+    border-top: 1px solid #dadada;
+    display: none;
+    margin-bottom: 0px;
+}
+.animal-list > div >span{
+    color: red;
+    display: block;
+    cursor: pointer;
+    font-size: 15px;
+}
+</style>
 <body>
+    <div class="animal-list">
+        <div>Lion <p class="moreText">The lion is a large cat of the genus Panthera, native to Africa and India. It has a muscular, broad-chested body; a short, rounded head; round ears; and a dark, hairy tuft at the tip of its tail.</p><span onclick="expandText(this, 'lion')">read more</span></div>
+        <div>Birds <p class="moreText">Birds are a group of warm-blooded vertebrates constituting the class Aves, characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton</p><span onclick="expandText(this, 'birds')">read more</span></div>
+        <div>Fish <p class="moreText">A fish is an aquatic, anamniotic, gill-bearing vertebrate animal with swimming fins and a hard skull,</p><span onclick="expandText(this, 'fish')">read more</span></div>
+        <div>Shark<p class="moreText">Sharks are a group of elasmobranch fish characterized by a cartilaginous skeleton, five to seven gill slits on the sides of the head, and pectoral fins that are not fused to the hea</p><span onclick="expandText(this, 'shark')">read more</span></div>
+    </div>
+
      <script src="./app.js"></script>
 </body>
 </html>
