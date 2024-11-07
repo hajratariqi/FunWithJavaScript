@@ -55,4 +55,6 @@ div.setAttribute('id', 'xyz')
 
 div.appendChild(p)
 div.appendChild(span)
+let mainBox = document.getElementById('mainBox')
+mainBox.appendChild(div)
 console.log(div)
