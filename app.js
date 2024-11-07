@@ -42,3 +42,17 @@ var size = 4;
 for(var j=size; j>=0 ; j--){
   a = a-2;
 }
+
+let div = document.createElement('div');
+let p = document.createElement('p');
+let span = document.createElement('span');
+let pTextNode = document.createTextNode('Hello');
+let spanTextNode = document.createTextNode('World');
+p.appendChild(pTextNode)
+span.appendChild(spanTextNode)
+div.setAttribute('class', 'main')
+div.setAttribute('id', 'xyz')
+
+div.appendChild(p)
+div.appendChild(span)
+console.log(div)
