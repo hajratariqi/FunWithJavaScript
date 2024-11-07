@@ -14,6 +14,8 @@ const expandText = (ele) =>{
 
 const makeInvisible = (image) =>{
         image.className += ' hidden'; 
+        console.log(image.nodeValue[1]);
+        
 
 } 
 let backToBtn = false
