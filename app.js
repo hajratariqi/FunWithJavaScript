@@ -40,6 +40,5 @@ var size = 5;
 var a = 5;
 var size = 4;
 for(var j=size; j>=0 ; j--){
-  console.log(a);
   a = a-2;
 }
